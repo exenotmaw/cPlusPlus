@@ -66,7 +66,7 @@ void signUp() {
 void depositTab(int i) {
     system("cls");
 
-    cout << "JAMOYO TIPIDSKI INCOME MONEY" << endl;
+    cout << "INCOME MONEY" << endl;
 
     cout << endl << "Enter the amount of Income: ";
     cin >> depositMoney;
@@ -85,7 +85,7 @@ void depositTab(int i) {
 void depositHistory(int i) {
     system("cls");
 
-    cout << "JAMOYO TIPIDSKI INCOME HISTORY" << endl;
+    cout << "INCOME HISTORY" << endl;
 
     for (int j = 0; j < depositCount; j++) {
         if (depositArray[i][j] == 0) {
@@ -104,7 +104,7 @@ int viewBalance(int i) {
     sumBalance = 0;
     minusBalance = 0;
 
-    cout << "JAMOYO TIPIDSKI BALANCE TAB" << endl << endl;
+    cout << "BALANCE TAB" << endl << endl;
 
     for (int j = 0; j < depositCount; j++) {
         sumBalance = sumBalance + depositArray[i][j];
@@ -137,7 +137,7 @@ void withdrawTab(int i) {
 
     currentBalance = sumBalance - minusBalance;
 
-    cout << "JAMOYO TIPIDSKI EXPENSES TAB" << endl << endl;
+    cout << "EXPENSES TAB" << endl << endl;
 
     cout << endl << "Enter the amount of Expenses: ";
     cin >> withdrawMoney;
@@ -156,7 +156,7 @@ void withdrawTab(int i) {
 void withdrawHistory(int i){
     system("cls");
 
-    cout << "JAMOYO TIPIDSKI EXPENSES HISTORY" << endl;
+    cout << "EXPENSES HISTORY" << endl;
 
     for (int j = 0; j < withdrawCount; j++) {
         if (withdrawArray[i][j] == 0) {
@@ -175,7 +175,7 @@ void interestR(int i) {
     sumBalance = 0;
     minusBalance = 0;
 
-    cout << "JAMOYO TIPIDSKI INTEREST RATE" << endl;
+    cout << "INTEREST RATE" << endl;
 
     for (int j = 0; j < depositCount; j++) {
         sumBalance = sumBalance + depositArray[i][j];
@@ -208,7 +208,7 @@ void logIn() {
     int option = 0;
     system("cls");
 
-    cout << "JAMOYO TIPIDSKI LOG IN TAB" << endl;
+    cout << "LOG IN TAB" << endl;
 
     if (userCount >= 1) {
         
@@ -278,7 +278,7 @@ int main()
     int choice = 0;
     do{
         system("cls");
-        cout << "JAMOYO TIPIDSKI" << endl;
+        cout << "WELCOME" << endl;
         cout << endl << "[1] Register User" << endl;
         cout << endl << "[2] Log In User" << endl;
         cout << endl << "[3] Exit" << endl;
@@ -293,7 +293,7 @@ int main()
             logIn();
         }
         else if (choice == 3) {
-            cout << endl << "Thank you for using the Jamoyo TipidSki." << endl;
+            cout << endl << "Thank you." << endl;
             return 0;
         }
         else {
